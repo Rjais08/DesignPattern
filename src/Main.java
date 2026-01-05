@@ -16,13 +16,23 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        long n = 8;
-        checklist(((Long)n).intValue());
+//        long n = 8;
+//        checklist(((Long)n).intValue());
 
-
+        int a=11, b=2,c;
+        c=a/b;
+        display(c);
 
     }
 
+
+    public static void display(int a){
+        System.out.println(a);
+        if(a>0){
+            display(a-1);
+        }
+        System.out.println(a);
+    }
 
 
 
